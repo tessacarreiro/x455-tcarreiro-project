@@ -4,8 +4,17 @@
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
 <link rel="stylesheet" href="./CSS/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+
 <style>
 body, html {
   height: 100%;
@@ -33,22 +42,47 @@ body, html {
       <a href="#" class="w3-button w3-block w3-black">HOME</a>
     </div>
     <div class="w3-col s3">
-      <a href="#Drink With Us" class="w3-button w3-block w3-black">Drink With Us</a>
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
     </div>
     <div class="w3-col s3">
-      <a href="#Eat With Us" class="w3-button w3-block w3-black">Eat With Us</a>
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
     </div>
     <div class="w3-col s3">
-      <a href="#Why We Love What We Do" class="w3-button w3-block w3-black">Why We Love What We Do</a>
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+      <span class="material-symbols-outlined" style="float: right">search</span>
     </div>
-      <div class="w3-col s3">
-      <a href="#Gallery" class="w3-button w3-block w3-black">Gallery</a>
+    <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="w3_open()"
+        >
+          <!-- use the hamburger icon (menu icon) from font-awesome.min.css -->
+          <i class="fa fa-bars"></i>
+        </a>
     </div>
-    <div class="w3-col s3">
-      <a href="#Reservations" class="w3-button w3-block w3-black">Reservations</a>
-    </div>
-  </div>
 </div>
+
+  <nav 
+    class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    style="display: none"
+    id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-large w3-padding-16"
+        >Close &times;</a
+      >
+      <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"
+        >About</a
+      >
+      <a href="#menu" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Menu</a
+      >
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Contact</a
+      >
+    </nav>
 
 <!-- Header with image -->
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
@@ -66,8 +100,8 @@ body, html {
 <!-- Add a background color and large text to the whole page -->
 <div class="w3-sand w3-grayscale w3-large">
 
-<!-- Drink with Us Container -->
-<div class="w3-container" id="Drink With Us">
+<!-- About Container -->
+<div class="w3-container" id="about">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CAFE</span></h5>
     <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -82,8 +116,8 @@ body, html {
   </div>
 </div>
 
-<!-- Eat With Us Container -->
-<div class="w3-container" id="Eat With Us">
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
   <div class="w3-content" style="max-width:700px">
  
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
@@ -176,6 +210,22 @@ function openMenu(evt, menuName) {
   evt.currentTarget.firstElementChild.className += " w3-dark-grey";
 }
 document.getElementById("myLink").click();
+
+ var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+
 </script>
 
 </body>
