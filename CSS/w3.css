@@ -254,9 +254,11 @@ a {
   border-spacing: 0;
   width: 100%;
   display: table;
+  font-family: "Barriecito", system-ui"
 }
 .w3-table-all {
   border: 1px solid #ccc;
+  font-family: "Barriecito", system-ui"
 }
 .w3-bordered tr,
 .w3-table-all tr {
@@ -267,9 +269,11 @@ a {
 }
 .w3-table-all tr:nth-child(odd) {
   background-color: #fff;
+  font-family: "Barriecito", system-ui"
 }
 .w3-table-all tr:nth-child(even) {
   background-color: #f1f1f1;
+  font-family: "Barriecito", system-ui"
 }
 .w3-hoverable tbody tr:hover,
 .w3-ul.w3-hoverable li:hover {
@@ -287,12 +291,14 @@ a {
   display: table-cell;
   text-align: left;
   vertical-align: top;
+  font-family: "Barriecito", system-ui"
 }
 .w3-table th:first-child,
 .w3-table td:first-child,
 .w3-table-all th:first-child,
 .w3-table-all td:first-child {
   padding-left: 16px;
+  font-family: "Barriecito", system-ui"
 }
 .w3-btn,
 .w3-button {

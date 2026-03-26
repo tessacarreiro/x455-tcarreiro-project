@@ -4,6 +4,17 @@
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- begin: add jquery script links to support for sortable table -->
+    <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+    <script
+      type="text/JavaScript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/JavaScript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
+    ></script>
+    <!-- end: add jquery script links to support for sortable table -->
 
   <link
       rel="stylesheet"
@@ -72,17 +83,6 @@ body, html {
 .body {font-family:"Nunito", sans-serif}
 .headers {font-family:"Barriecito", system-ui}
 
-.image-container {
-  width: 100%;
-  height: 700px;
-  margin-bottom: 25px;
-}
-
-.image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 </style>
 </head>
@@ -133,13 +133,13 @@ body, html {
         >Close &times;</a
       >
       <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"
-        >Drink With Us</a
+        >Why We Do What We Do</a
       >
       <a href="#menu" onclick="w3_close()" class="w3-bar-item w3-button"
         >Eat With Us</a
       >
       <a href="#where" onclick="w3_close()" class="w3-bar-item w3-button"
-        >Why We Do What We Do</a
+        >Drink with Us</a
       >
       <a href="#gallery" onclick="w3_close()" class="w3-bar-item w3-button"
         >Gallery</a
@@ -169,7 +169,7 @@ body, html {
 <!-- About Container -->
 <div class="w3-container" id="about">
   <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CAFE</span></h5>
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Why we love what we do</span></h5>
     <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
     <div class="w3-panel w3-leftbar w3-light-grey">
@@ -186,7 +186,7 @@ body, html {
 <div class="w3-container" id="menu">
   <div class="w3-content" style="max-width:700px">
  
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Eat with us</span></h5>
   
     <div class="w3-row w3-center w3-card w3-padding">
       <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
@@ -252,6 +252,49 @@ body, html {
   </div>
 </div>
 
+<!-- Drink with us Container -->
+<div class="w3-container" id="where">
+  <div class="w3-content" style="max-width:700px">
+
+<table id="myTable" class="w3-table-all" style="font-family:Barriecito, system-ui">
+  <thread>
+    <tr class="w3-green">
+      <th>Bottle</th>
+      <th>Price</th>
+      <th>Grape Type</th>
+      <th>Color</th>
+    </tr>
+    <tr class="w3-hover-gray">
+      <td>Bottle 1</td>
+      <td>$45</td>
+      <td>Pinot Noir</td>
+      <td>Red</td>
+    </tr>
+    <tr class="w3-hover-gray">
+      <td>Bottle 2</td>
+      <td>$48</td>
+      <td>Caberney Sauvignon</td>
+      <td>Red</td>
+    </tr>
+    <tr class="w3-hover-gray">
+      <td>Bottle 3</td>
+      <td>$38</td>
+      <td>Sauvignon Blanc</td>
+      <td>White</td>
+    </tr>
+    <tr class="w3-hover-gray">
+      <td>Bottle 4</td>
+      <td>$48</td>
+      <td>Zinfindel</td>
+      <td>Red</td>
+    </tr>
+
+
+
+  </thread>
+</table>
+
+
 <!-- Gallery Container -->
 <div class="w3-container" id="gallery">
   <div class="w3-content" style="max-width:700px">
@@ -306,6 +349,18 @@ document.getElementById("myLink").click();
       function w3_close() {
         mySidebar.style.display = "none";
       }
+
+  // sortable table begin
+      $(document).ready(function () {
+        $("table#myTable").tablesorter({
+          sortList: [
+            [2, 1],
+          ] /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
+          CssAsc: "tablesorter-headerAsc",
+          CssDesc: "tablesorter-headerDesc",
+        });
+      });
+      // sortable table end
 
 </script>
 
