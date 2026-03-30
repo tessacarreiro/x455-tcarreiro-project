@@ -201,6 +201,7 @@ h4 {
 }
 h5 {
   font-size: 18px;
+  font-family:"Barriecito"
 }
 h6 {
   font-size: 16px;
@@ -239,7 +240,7 @@ hr {
   margin: 20px 0;
 }
 .w3-image {
-  max-width: 100%;
+  max-width: 60%;
   height: auto;
 }
 img {
@@ -345,8 +346,8 @@ a {
 .w3-badge,
 .w3-tag {
   font-family:"Barriecito", system-ui;
-    background-color: #000;
-  color: #fff;
+    background-color: #2c902f;
+  color: #fbfaef;
   display: inline-block;
   padding-left: 8px;
   padding-right: 8px;
@@ -911,6 +912,8 @@ a {
 .w3-container,
 .w3-panel {
   padding: 0.01em 16px;
+  border-width: 5px;
+  border-color: #2c902f;
 }
 .w3-panel {
   margin-top: 16px;
@@ -961,6 +964,7 @@ a {
   box-shadow:
     0 2px 5px 0 rgba(0, 0, 0, 0.16),
     0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color:#f2fde0
 }
 .w3-card-4,
 .w3-hover-shadow:hover {
@@ -1095,15 +1099,15 @@ a {
 .w3-grayscale-max,
 .w3-hover-greyscale:hover,
 .w3-hover-grayscale:hover {
-  filter: grayscale(100%);
+  filter: grayscale(0%);
 }
 .w3-greyscale,
 .w3-grayscale {
-  filter: grayscale(75%);
+  filter: grayscale(0%);
 }
 .w3-greyscale-min,
 .w3-grayscale-min {
-  filter: grayscale(50%);
+  filter: grayscale(0%);
 }
 .w3-sepia {
   filter: sepia(75%);
@@ -1269,7 +1273,7 @@ a {
 .w3-green,
 .w3-hover-green:hover {
   color: #AAD173 !important;
-  background-color: #669411!important;
+  background-color: #2c902f!important;
 }
 
 .w3-amber,
@@ -1312,12 +1316,12 @@ a {
 .w3-green,
 .w3-hover-green:hover {
   color: #fff !important;
-  background-color: #4caf50 !important;
+  background-color: #2c902f !important;
 }
 .w3-light-green,
 .w3-hover-light-green:hover {
-  color: #000 !important;
-  background-color: #8bc34a !important;
+  color: #2c902f !important;
+  background-color: #f1ffda !important;
 }
 .w3-indigo,
 .w3-hover-indigo:hover {
@@ -1367,7 +1371,11 @@ a {
 .w3-sand,
 .w3-hover-sand:hover {
   color: #000 !important;
-  background-color: #fdf5e6 !important;
+  background-color: #f2fde0 !important;
+}
+.w3-pale-olive-green{
+  color: #000 !important;
+  background-color: #f1ffda !important;
 }
 .w3-teal,
 .w3-hover-teal:hover {
@@ -1433,7 +1441,7 @@ w3-hover-cobalt:hover {
 .w3-olive,
 .w3-hover-olive:hover {
   color: #fff !important;
-  background-color: #5d8b49 !important;
+  background-color: #2c902f !important;
 }
 .w3-paper,
 .w3-hover-paper:hover {
@@ -1493,6 +1501,10 @@ w3-hover-cobalt:hover {
 .w3-text-amber,
 .w3-hover-text-amber:hover {
   color: #ffc107 !important;
+}
+w3-text-olive,
+.w3-hover-text-olive:hover {
+  font-color: #2c902f !important;
 }
 .w3-text-aqua,
 .w3-hover-text-aqua:hover {

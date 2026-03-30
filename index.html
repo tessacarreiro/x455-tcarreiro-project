@@ -83,6 +83,11 @@ body, html {
 .body {font-family:"Nunito", sans-serif}
 .headers {font-family:"Barriecito", system-ui}
 
+.container {
+  max-height: 800px; 
+  margin:0; auto 
+}
+
 
 </style>
 </head>
@@ -151,86 +156,148 @@ body, html {
 
 <!-- Header with image -->
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
-  <div class="image-container; image-container-img"> <img src=/IMG_3353.jpeg></div>
-  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-    <span class="w3-tag">Open from 6am to 5pm</span>
+  <div class="container" class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small" style="max-height:710px;"><img src="IMG_3353.jpeg">
+  <span class="w3-tag">Open from Noon to 9pm</span>
   </div>
   <div class="w3-display-middle w3-center">
-     <span class="w3-text-white" style="font-size:100px">We Olive</span>
+     <span class="w3-tag" style="font-size:150px">We Olive</span>
   </div>
   <div class="w3-display-bottomright w3-center w3-padding-large">
-    <span class="w3-text-white">15 Adr street, 5015</span>
-  </div>
+    <span class="w3-tag">1158 Prospect St San Diego</span></div>
+  <div class="w3-display-bottomleft w3-center w3-padding-large">
+    <span class="w3-tag">Open from Noon to 9pm</span>
+  </div> 
+</div>
 </header>
 
 <!-- Add a background color and large text to the whole page -->
 <div class="w3-sand w3-grayscale w3-large">
 
 <!-- About Container -->
-<div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Why we love what we do</span></h5>
-    <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
-    <div class="w3-panel w3-leftbar w3-light-grey">
-      <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
-      <p>Chef, Coffeeist and Owner: Liam Brown</p>
+<div class="w3-container;w3-padding-large" id="about"> 
+  <div class="w3-content" style="max-width:1310px; margin-left:50px; padding-right:50px float:left">
+    <h5 class="w3-left-align w3-padding-64"><span class="w3-tag w3-wide" style="font-size:50px;">Why we do what we do</span></h5>
+    <p>We Olive has been committed to local farmers for two decades and our passion for locally sourced, healthy, delicious, artisan extra virgin olive oil has only grown. We love sharing our passion with you! When a customer visits one of our locations, it is our ultimate goal to pass along that passion and to instill the excitement and celebration of fresh, healthy foods made with ingredients from local artisans and farmers. Our first location opened in La Jolla 20 years ago this year.</p>
+      <p>Come celebrate this milestone anniversary with us by visiting one of our eight locations. Working with these local artisans to market their products is what the We Olive brand is all about. Keeping true to this, We Olive only sells California Olive Oil Council (COOC) approved California produced Extra Virgin Olive Oils. On a daily basis, we give customers the opportunity to discover California’s finest Extra Virgin Olive Oil, and we’re proud to do so! When a consumer walks through our doors, or visits our website, we make an effort to teach them as much as they’d like to know.    
+      </p>
+       <img
+                src="./ronhvass-oil-1773835.jpg"
+                class="w3-image"
+                alt="EVOO olive oil"
+                style="width: 20%; max-height: 50%; float-right; max-width: 20%; max-height: auto; clip-path: polygon(50% 0%, 
+        61% 35%, 
+        100% 35%, 
+        68% 57%, 
+        79% 91%, 
+        50% 70%, 
+        21% 91%, 
+        32% 57%, 
+        0% 35%, 
+        39% 35%);
+        shape-outside: circle 45%;"
+              />
+      <p>From the history of EVOO and how to choose the right one, to its many culinary applications and the FDA approved heart healthy benefits, We Olive consumers are informed consumers.</p>
+      <p>When you shop at the We Olive online olive oil store, you can rest assured you will receive only certified, first cold-pressed extra virgin olive oil! Besides, you are supporting the local artisan-made extra virgin olive oil producers in California. The unique weather and terrain in this part of the US create ideal conditions only comparable to the Mediterranean region. Thus, we can enjoy the extraordinary flavor and health benefits that can only come from Authentic Extra Virgin Olive Oil! EVOO - olive oil at it's finest.</p>
+      <p>While the California wine industry has been popular around the world for decades, California's EVOO industry is still relatively unknown. Even though California's olive oil has been recognized internationally for its superior flavor and craftsmanship, many people are unaware of its existence.</p>
+       <img
+                src="./IMG_4799.jpeg"
+                class="w3-image"
+                alt="EVOO olive oil"
+                style="width: 50%; max-height: 50%; float-right; max-width: 20%; max-height: auto; clip-path: polygon(50% 0%, 
+        61% 35%, 
+        100% 35%, 
+        68% 57%, 
+        79% 91%, 
+        50% 70%, 
+        21% 91%, 
+        32% 57%, 
+        0% 35%, 
+        39% 35%);
+        shape-outside: circle 45%;"
+              />
+<div class="w3-panel w3-leftbar w3-light-green" style="border-color: #2c902f; border-width:5px;">
+      <p><i>"We Olive is the BEST wine bar around. A go-to spot for my partner and I. Great food, great staff, great views and great wine!"</i></p>
+      <p>A long time customer</p>
     </div>
-    <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
-    <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
-    <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
-  </div>
+      </div>
+      <div class="w3-padding: large">
+          </div>
 </div>
 
 <!-- Menu Container -->
 <div class="w3-container" id="menu">
-  <div class="w3-content" style="max-width:700px">
+  <div class="w3-content" style="max-width:1080px" style="background-color:#f2fde0">
  
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Eat with us</span></h5>
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide" style="font-size:50px">Eat with us</span></h5>
   
     <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
-        <div class="w3-col s6 tablink">Eat</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Bite');" id="myLink">
+        <div class="w3-col s4 tablink" style="font-size: 25px; color: #2c902f; font-family:Barriecito, system-ui">Bites</div>
       </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-        <div class="w3-col s6 tablink">Drink</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Sandwiches');">
+        <div class="w3-col s4 tablink" style="font-size: 25px; color: #2c902f; font-family:Barriecito, system-ui">Sandwiches, Flatbreads & Salads</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Desserts');">
+        <div class="w3-col s4 tablink" style="font-size: 25px; color: #2c902f; font-family:Barriecito, system-ui">Desserts</div>
       </a>
     </div>
 
-    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Bread Basket</h5>
-      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
-    
-      <h5>Honey Almond Granola with Fruits</h5>
-      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-    
-      <h5>Belgian Waffle</h5>
-      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-    
-      <h5>Scrambled eggs</h5>
-      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-    
-      <h5>Blueberry Pancakes</h5>
-      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+    <div id="Bite" class="w3-container menu w3-padding-48 w3-card">
+      <div class="w3-text-olive" style="font-size: 20px; color: #2c902f">
+        <p style="font-size: 25px; color: #2c902f; font-family:Barriecito, system-ui">Bites</p>
+      <p>Artisan Cheese Board $24</p>
+      <p>Charcuterie & Mustard $26</p>
+      <p>Artisan Bread & Dipping Oil.$6</p>
+      <p>Castelvetrano Olives$11</p>
+      <p>Marcona Almonds$12</p>
+      <p>Stuffed Peppadews $12</p>
+      <p>Crostini $12</p>
+      <p>Proscuitto Wrapped Dates $12</p>
+      <p>Burrata Bowl $15</p><br>
+
+      <p style="font-size: 25px; color: #2c902f; font-family:Barriecito, system-ui">Dips</p>
+      <p>Original Hummus$15</p>
+      <p>Spicy Bell Pepper $15</p>
+      <p>Whipped Goat Cheese $15</p>
+      <p>Caramelized Balsamic Onion $15</p>
+      <p>Dip Duo $16</p><br>
+     </div>
     </div>
 
-    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Coffee</h5>
-      <p class="w3-text-grey">Regular coffee 2.50</p><br>
-    
-      <h5>Chocolato</h5>
-      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
-    
-      <h5>Corretto</h5>
-      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
-    
-      <h5>Iced tea</h5>
-      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
-    
-      <h5>Soda</h5>
-      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    <div id="Sandwiches" class="w3-container menu w3-padding-48 w3-card">
+     <div class="w3-text-olive" style="font-size: 20px; color: #2c902f">
+        <p style="font-size: 25px; color: #2c902f; font-family:Barriecito, system-ui"> Sandwiches</p>
+      <p>Caprese Panini $17</p>
+      <p>Italian $19</p>
+      <p>Chicken & Proscuitto 19</p><br>
+
+      <p style="font-size: 25px; color: #2c902f; font-family:Barriecito, system-ui"> Flatbreads</p>
+      <p>Artichoke Caper $15</p>
+      <p>Burrata & Spicy Honey $17</p>
+      <p>Balsamic Onion & Prosciutto $17</p>
+      <p>Chicken & Red Chili $17</p>
+      <p>Pesto Formage $14</p><br>
+
+      <p style="font-size: 25px; color: #2c902f; font-family:Barriecito, system-ui"> Salads</p>
+      <p>Veggie Chopped $15</p>
+      <p>Strawberry Feilds $16</p>
+      <p>Orchard $15</p>
+      <p>Lacinato Kale & Cheese $15</p>
+      <p>Side $8</p>
+     </div>
     </div>  
-    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+
+    <div id="Desserts" class="w3-container menu w3-padding-48 w3-card">
+      <div class="w3-text-olive" style="font-size: 20px; color: #2c902f">
+        <p style="font-size: 25px; color: #2c902f; font-family:Barriecito, system-ui">Desserts</p>
+      <p>Warm Olive Oil & Salt Brownie $11</p>
+      <p>Gelato Trio $14</p>
+      <p>Lemon Cake $9</p>
+    </div>
+    </div>
+
+
+    <img src="./IMG_0778.jpeg" style="width:100%;max-width:1000px;margin-top:32px;">
   </div>
 </div>
 
@@ -302,6 +369,18 @@ body, html {
 <!-- Reservations Container -->
 <div class="w3-container" id="reservations">
   <div class="w3-content" style="max-width:700px">
+
+    <div class="w3-row">
+      <h1>Accordian</h1>
+      <div class="w3-row">
+        <div class="w3-col s6 w3-left" style="padding-right: 3px">
+          <button id="accordionBtn1" onclick="myAccordion('accordian1')"class=w3-block w3-green w3-center-align>
+          </button>
+          ><h1></h1>
+        </div>
+      </div>
+
+    </div>
 
 <!-- End page content -->
 </div>
