@@ -258,7 +258,7 @@ a {
   font-family: "Barriecito", system-ui"
 }
 .w3-table-all {
-  border: 1px solid #ccc;
+  border: 1px solid #f2fde0;
   font-family: "Barriecito", system-ui"
 }
 .w3-bordered tr,
@@ -266,7 +266,7 @@ a {
   border-bottom: 1px solid #ddd;
 }
 .w3-striped tbody tr:nth-child(even) {
-  background-color: #f1f1f1;
+  background-color: #f2fde0;
 }
 .w3-table-all tr:nth-child(odd) {
   background-color: #fff;
@@ -789,10 +789,14 @@ a {
     max-width: 100%;
   }
 }
-.w3-top,
-.w3-bottom {
+.w3-top{
   font-family:"Barriecito", system-ui;
     position: fixed;
+  width: 100%;
+  z-index: 1;}
+
+  .w3-bottom {
+  font-family:"Barriecito", system-ui;
   width: 100%;
   z-index: 1;
 }
