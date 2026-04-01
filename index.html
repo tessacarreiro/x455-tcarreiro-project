@@ -95,22 +95,28 @@
 
        .mySlides-container {
           width: 400px;
-          height: 500px;
+          height: 300px;
           margin-bottom: 25px;
+          border: 4px;
+          border-color: #2c902f;
         }
 
         .mySlides-img {
            width: 100%;
            height: 100%;
            object-fit: cover;
+           border: 5px;
+            border-color: #2c902f
           }
         
         .thumbnail-container{
-          max-width:100px;
-          max-height:100px;
+          max-width:75px;
+          max-height:75px;
           object-fit: cover;
           border-radius: 50%;
-          float:left
+          float:left;
+          border: 2px;
+          border-color: #2c902f;
 
         }
 
@@ -125,6 +131,11 @@
          padding: 5px,0;
          margin:5px 
         }
+
+        .my-scrolling {
+        height: 200px;
+        overflow: auto;
+         }
 
 
    
@@ -263,7 +274,7 @@ body, html {
 
 <!-- About Container -->
 <div class="w3-container;w3-padding-large" id="about"> 
-  <div class="w3-content" style="max-width:1310px; margin-left:50px; padding-right:50px; float:left">
+  <div class="w3-content" style="max-width:100%; margin-left:50px; padding-right:50px; float:left">
     <h5 class="w3-left-align w3-padding-64"><span class="w3-tag w3-wide" style="font-size:50px;">Why we do what we do</span></h5>
     <p>We Olive has been committed to local farmers for two decades and our passion for locally sourced, healthy, delicious, artisan extra virgin olive oil has only grown. We love sharing our passion with you! When a customer visits one of our locations, it is our ultimate goal to pass along that passion and to instill the excitement and celebration of fresh, healthy foods made with ingredients from local artisans and farmers. Our first location opened in La Jolla 20 years ago this year.</p>
     <img
@@ -388,7 +399,7 @@ body, html {
 
     <p style="font-size: 40px; color: #2c902f; font-family:Barriecito, system-ui"> Want to learn more?</p>
      <div s4>
-      <div class="w3-col m4 w3-center" style=padding:10px>
+      <div class="w3-col m4 w3-center" style=padding:20px>
           <iframe src="https://www.youtube.com/embed/n1l_xjou-3E?si=0B1q-MlWQZgHBHrB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
          <p style="font-size: 20px; color: #2c902f; font-family:Barriecito, system-ui">Getting into Wine: A Beginners Crash Course</p>      
          <button
@@ -456,7 +467,7 @@ body, html {
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide" style="font-size:30px">Find the wine you'll love</span></h5>
     <p style="float: center; font-size: 24px;"> Filter through our favorite bottles to see which one is for you!</p>
-<table id="myTable" class="w3-table-all" style="font-family:Barriecito, system-ui; border:none; max-width: auto; fit-content">
+<table id="myTable" class="w3-table-all" style="font-family:Barriecito, system-ui; border:none; max-width: auto;">
   <thread>
     <tr class="w3-green">
       <th>Bottle</th>
@@ -495,14 +506,15 @@ body, html {
 
 <!-- Gallery Container -->
 <div class="w3-container" id="gallery">
-  <div class="w3-content" style=max: width 10px;px>
+  <div class="w3-content" style=max-width:1080px>
   <div class="w3-content" style="max-width:1080px" style=background-color:#f2fde0>
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide" style="font-size:50px">Gallery</span></h5>
-  <div class="w3-content mySlides-container" style="max-width:700px">
+    <p class="w3-center" style="font-family:Nunito">Come check out the views & the vibes!</p>
+  <div class="w3-content mySlides-container" style="max-width:700px;">
       <img
               class="mySlides-img"
               src="./IMG_8493.jpeg"
-              style="width: 100%"
+              style="width: 100%;"
             />
         <img
           class="mySlides-img"
@@ -568,15 +580,68 @@ body, html {
 </div>
 <!-- Reservations Container -->
 <div class="w3-container" id="reservations">
-    <div class="w3-content" style="max-width:700px">
-        <div class="w3-content" style="max-width:1080px" style="background-color:#f2fde0">
-        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide" style="font-size:50px">Reservations</span></h5>
-      <div class="w3-content" style="max-width:700px">
-    </div>
-  </div>
-</div>
-</div>
-</div>
+    <div class="w3-content">
+        <h5 class="w3-center w3-padding-48" style="max-width: 100%;"><span class="w3-tag w3-wide" style="font-size:50px">Reservations</span></h5></div>
+
+          <div class="w3-row" style="margin-bottom: 100px;">
+                  <div class="w3-row w3-col" style="margin-bottom: 100px;"></div>
+                      <div class="w3-col s4 w3-padding w3-sand" style="padding:10px">
+                        <div
+                          class="w3-olive w3-center"
+                          style="
+                            margin-left: -16px;
+                            margin-right: -16px;
+                            margin-top: -18px">
+                          <h2 style=" font-family:Barriecito, system-ui">Patio</h2>
+                        </div>
+            
+                            <div class="my-scrolling" style="padding-right: 10px">
+                              <p>
+                                The top patio is a lively and stunning seating area. During the cooler winter months the area is cozy with heaters to make sure the gorgeous sunset can be enjoyed all year round. In the warmer months our large umbrellas keep the patio a cool temperature for our guests. From this top patio, you will be able to enjoy the gorgeous ocean views while sipping your favorite wine. 
+                              </p>
+                            </div>
+                          </div>
+          
+                        <div class="w3-col s4 w3-padding w3-sand">
+                          <div
+                              class="w3-olive w3-center"
+                              style="
+                                margin-left: -16px;
+                                margin-right: -16px;
+                                margin-top: -18px">
+                              <h2 style=" font-family:Barriecito, system-ui">Bar</h2>
+                            </div>
+                          
+                            <div class="my-scrolling" style="padding-right: 10px">
+                              <p>
+                                Cozy and intimate, the bar area offers guests a personal experience no matter the weather. With high top tables and bar seating, guests will be immersed in our warm living-room like space nestled between the top patio area and the tasting room and gormet food section. The bar area is inside, though not too far from the ocean breeze thanks to our picturesque french doors. 
+                              </p>
+                            </div>
+                          </div>
+          
+
+                      <div class="w3-col s4 w3-padding w3-sand">
+                        <div
+                            class="w3-olive w3-center"
+                            style="
+                              margin-left: -16px;
+                              margin-right: -16px;
+                              margin-top: -18px">
+                            <h2 class= center style=" font-family:Barriecito, system-ui">Tasting Room</h2>
+                          </div>
+                        
+                          <div class="my-scrolling" style="padding-right: 10px">
+                            <p>
+                              Our tasting room can be booked only during the hours of 12-4pm and gives guests a private environment to taste and experience our wins and olive oils. Our staff is happy to tailor tasting to fit your or your groups needs! Most wine tasting last between 45 mins-60 mins and can be reserved for groups between 1-8 people. We are more than happy to accomodate special requests. Please call us if you have any questions. 
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                      </div>
+                </div>
+      </div>
+
 </div>
 <!-- End page content -->
 
