@@ -144,8 +144,6 @@
           background-color: white;
           margin: 10px;
           padding:10px;
-          border-color: #2c902f;
-          border-width:5px;
          }
 
          
@@ -211,16 +209,13 @@ body, html {
   <div class="w3-row w3-padding w3-olive"> 
     <i class= "w3-padding-small w3-hide-small w3-right fa fa-search"></i
           ></a>
-    <img src="Group 24.png" style="width:50px; float:left">
+    <img src="Group 24.png" style="width:50px; float:left; background-color: #2c902f;">
     <div class="w3-col s3 w3-hide-small">
-      <a href="#" class="w3-button w3-block w3-olive">Home</a>
-    </div>
+      <a href="#" class="w3-button w3-block w3-olive">Home</a></div>
     <div class="w3-col s3 w3-hide-small">
-      <a href="#DrinkWithUs" class="w3-button w3-block w3-olive">Drink With Us </a>
-    </div>
+      <a href="#drink" class="w3-button w3-block w3-olive">Drink With Us</a></div>
     <div class="w3-col s3 w3-hide-small">
-      <a href="#menu" class="w3-button w3-block w3-olive">Eat With Us</a>
-    </div>
+      <a href="#eat" class="w3-button w3-block w3-olive">Eat With Us</a></div>
     <div class="w3-col s3 w3-hide-small">
       <a href="#about" class="w3-button w3-block w3-olive">Why We Do What We Do</a></div>
   <div class="w3-col s3 w3-hide-small">
@@ -239,7 +234,7 @@ body, html {
     </div>
 
   <nav 
-    class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large w3-olive"
     style="display: none"
     id="mySidebar"
     >
@@ -252,16 +247,16 @@ body, html {
       <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"
         >Why We Do What We Do</a
       >
-      <a href="#menu" onclick="w3_close()" class="w3-bar-item w3-button"
+      <a href="#eat" onclick="w3_close()" class="w3-bar-item w3-button"
         >Eat With Us</a
       >
-      <a href="#wDrinkWithUs" onclick="w3_close()" class="w3-bar-item w3-button"
+      <a href="#drink" onclick="w3_close()" class="w3-bar-item w3-button"
         >Drink with Us</a
       >
       <a href="#gallery" onclick="w3_close()" class="w3-bar-item w3-button"
         >Gallery</a
       >
-      <a href="#creservations" onclick="w3_close()" class="w3-bar-item w3-button"
+      <a href="#reservations" onclick="w3_close()" class="w3-bar-item w3-button"
         >Reservations</a
       >
     </nav>
@@ -337,8 +332,9 @@ body, html {
 </div>
 
 <!-- Menu Container -->
-<div class="w3-container" id="menu">
-  <div class="w3-content" style="max-width:1080px" style="background-color:#f2fde0">
+<div class="w3-container">
+  <div id="eat"></div>
+  <div class="w3-content" id="eat" style="max-width:1080px" style="background-color:#f2fde0">
  
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide" style="font-size:50px">Eat with us</span></h5>
   
@@ -375,11 +371,10 @@ body, html {
       <p>Dip Duo $16</p><br>
      </div>
     </div>
-  </div>
+ 
   </div>
 
   <div class="w3-content" style="max-width:1080px" style="background-color:#f2fde0">
-
     <div id="Sandwiches" class="w3-container menu w3-padding-48 w3-card">
      <div class="w3-text-olive" style="font-size: 20px; color: #2c902f">
         <p style="font-size: 25px; color: #2c902f; font-family:Barriecito, system-ui"> Sandwiches</p>
@@ -471,19 +466,17 @@ body, html {
                 style="text-align:left"
               >
               <p style="font-family:Nunito">In this video, we dive deep into the amazing health benefits of virgin olive oil and why it’s a staple in so many healthy diets around the world. Packed with antioxidants, healthy fats, and anti-inflammatory properties, virgin olive oil is not only a delicious addition to your meals but also a powerful ally for your health.  Discover how this liquid gold can enhance your overall wellness. Whether you're using it for cooking, dressings, or skincare, virgin olive oil is a true superfood that offers a wide range of benefits. Don't forget to like, comment, and subscribe for more health tips and lifestyle content!  #healthbenefits  #healthyeating  #superfoods  #oliveoil  #healthylifestyle  #hearthealth  #antiinflammatory  #skincare  #wellness  #oliveoilbenefits  #naturalhealing #cookingtips</p>
-  
         </div>
      </div>
   </div>
- 
-
 <!-- Drink with us Container -->
-<div id="DrinkWithUs">
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide" style="font-size:50px">Drink With Us</span></h5>
+<div class="w3-container">
+    <div id="drink"></div>
+    <h5 class="w3-center w3-padding-48" id="drink"><span class="w3-tag w3-wide" style="font-size:50px">Drink With Us</span></h5>
     <div class="w3-content" style="max-width:1080px;background-color:#f2fde0">
       <p style="font-size: 40px; color: #2c902f; font-family:Barriecito, system-ui; margin-left:30px"> White Wines</p>
             <!-- first thumbnail image created below -->
-            <div class="w3-container w3-padding-64" id="DrinkWithUs">
+            <div class="w3-container w3-padding-64">
               <div class="padding-large">
                 <div class="w3-col s4" style="margin:10px">
                   <img
