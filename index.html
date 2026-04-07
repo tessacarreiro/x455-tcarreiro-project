@@ -474,48 +474,48 @@ body, html {
 <div class="w3-container">
     <div id="drink"></div>
     <h5 class="w3-center w3-padding-48" id="drink"><span class="w3-tag w3-wide" style="font-size:50px">Drink With Us</span></h5>
-    <div class="w3-content" style="max-width:1080px;background-color:#f2fde0">
-      <p style="font-size: 40px; color: #2c902f; font-family:Barriecito, system-ui; margin-left:30px"> White Wines</p>
-            <!-- first thumbnail image created below -->
-            <div class="w3-container w3-padding-48">
-              <div class="padding-large">
+    <div class="w3-content s4">
+      <p style="font-size: 40px; color: #2c902f; font-family:Barriecito, system-ui; margin-left:20px"> White Wines</p>
+            <div class="w3-container s4 w3-padding-48">
+                <div class="w3-row">
+                  <div class="w3-col s4" style="margin:10px">
+                    <img
+                      src="./Albarino.png"
+                      style="width:33.3%; cursor: zoom-in; max-width:200px; max-height:300px; align-content: center;"
+                      onclick="document.getElementById('modal01').style.display='block'"
+                      class="w3-hover-shadow"
+                    />
+                    <p style="color: #2c902f; font-family:Barriecito; font-size: 25px;">Albariño</p>
+                    <p style="color: #2c902f; font-family:Barriecito">2023 La Marea Krisy Vineyard, Monterey</p>
+                    <p style="color: #2c902f; font-family:Barriecito">$15 glass / $48 bottle </p>
+                </div>
+                
+                <div class="w3-col s4" style="margin:10px">
+                    <img
+                      src="./Chardonay.png"
+                      style="width: 33.3%; cursor: zoom-in; max-width:200px; max-height:300px; align-content: center;"
+                      onclick="document.getElementById('modal02').style.display='block'"
+                      class="w3-hover-shadow"
+                    />
+                      <p style="color: #2c902f; font-family:Barriecito; font-size: 25px;">Chardonnay</p>
+                      <p style="color: #2c902f; font-family:Barriecito">2022 La Follette, ‘Los Primeros’, Monterey & Sonoma County</p>
+                      <p style="color: #2c902f; font-family:Barriecito">$15 glass / $48 bottle</p>
+                </div>
+
                 <div class="w3-col s4" style="margin:10px">
                   <img
-                    src="./Albarino.png"
-                    style="width: s4; cursor: zoom-in; max-width:200px; max-height:300px; align-content: center;"
-                    onclick="document.getElementById('modal01').style.display='block'"
-                    class="w3-hover-shadow"
-                   />
-                   <p style="color: #2c902f; font-family:Barriecito; font-size: 25px;">Albariño</p>
-                  <p style="color: #2c902f; font-family:Barriecito">2023 La Marea Krisy Vineyard, Monterey</p>
-                  <p style="color: #2c902f; font-family:Barriecito">$15 glass / $48 bottle </p>
-               </div>
-
-               <div class="w3-col s4" style="margin:10px">
-                  <img
-                    src="./Chardonay.png"
-                    style="width: s4; cursor: zoom-in; max-width:200px; max-height:300px; align-content: center;"
-                    onclick="document.getElementById('modal02').style.display='block'"
-                    class="w3-hover-shadow"
-                   />
-                    <p style="color: #2c902f; font-family:Barriecito; font-size: 25px;">Chardonay</p>
-                    <p style="color: #2c902f; font-family:Barriecito">2022 La Follette, ‘Los Primeros’, Monterey & Sonoma County</p>
-                    <p style="color: #2c902f; font-family:Barriecito">$15 glass / $48 bottle </p>
-               </div>
-
-               <div class="w3-col s4" style="margin:10px">
-                  <img
                     src="./Sauv Blanc.png"
-                    style="width: s4; cursor: zoom-in; max-width:200px; max-height:300px; align-content: center;"
+                    style="width: 33.3%; cursor: zoom-in; max-width:200px; max-height:300px; align-content: center;"
                     onclick="document.getElementById('modal03').style.display='block'"
                     class="w3-hover-shadow"
                    />
                    <p style="color: #2c902f; font-family:Barriecito;font-size: 25px;">Sauvignon Blanc</p>
                    <p style="color: #2c902f; font-family:Barriecito">2022 Dry Creek Valley, California</p>
                    <p style="color: #2c902f; font-family:Barriecito">$14 glass / $55 bottle </p>
-               </div>
+                 </div>
+                </div>
               </div>
-            </div>
+            
 
              <div class="w3-row-padding" style="margin: 15px 0px">
               <div
@@ -545,7 +545,7 @@ body, html {
                 >&times;</span>
             <!-- add modal background image -->
                 <div class="w3-modal-content w3-animate-zoom">
-                  <h4 class="w3-center w3-tag">Chardonay</h4>
+                  <h4 class="w3-center w3-tag">Chardonnay</h4>
                   <img src="./Chardonay.png" style="width: 100%"/>
               </div>
              </div>
@@ -568,6 +568,8 @@ body, html {
              </div>
             </div>
 
+            
+
           
     
 
@@ -577,7 +579,7 @@ body, html {
 <table id="myTable" class="w3-table-all" style="font-family:Barriecito, system-ui; border:none; max-width: auto;">
   <thead>
     <tr class="w3-green">
-      <th>Bottle</th>
+      <th>Region</th>
       <th>Price</th>
       <th>Grape Type</th>
       <th>Color</th>
@@ -585,28 +587,34 @@ body, html {
   </thead>
   <tbody>
     <tr class="w3-hover-gray">
-      <td>Bottle 1</td>
-      <td>$45</td>
+      <td>Monterey County, CA</td>
+      <td>$52</td>
       <td>Pinot Noir</td>
       <td>Red</td>
     </tr>
     <tr class="w3-hover-gray">
-      <td>Bottle 2</td>
-      <td>$48</td>
-      <td>Caberney Sauvignon</td>
+      <td>Paso Robles</td>
+      <td>$46</td>
+      <td>Cabernet Franc</td>
       <td>Red</td>
     </tr>
     <tr class="w3-hover-gray">
-      <td>Bottle 3</td>
-      <td>$38</td>
+      <td>Dry Creek, CA</td>
+      <td>$55</td>
       <td>Sauvignon Blanc</td>
       <td>White</td>
     </tr>
     <tr class="w3-hover-gray">
-      <td>Bottle 4</td>
-      <td>$48</td>
+      <td>Amador County</td>
+      <td>$45</td>
       <td>Zinfindel</td>
       <td>Red</td>
+    </tr>
+     <tr class="w3-hover-gray">
+      <td>Paso Robles</td>
+      <td>$48</td>
+      <td>Blend</td>
+      <td>Orange</td>
     </tr>
   </tbody>
 </table>
