@@ -137,6 +137,17 @@
         overflow: auto;
          }
 
+         .lightbox-container{
+          max-width: 200px;
+          max-width: 200px;
+          display: flex;
+          background-color: white;
+          margin: 10px;
+          padding:10px;
+          border-color: #2c902f;
+          border-width:5px;
+         }
+
          
 
    
@@ -470,7 +481,88 @@ body, html {
 <div id="DrinkWithUs">
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide" style="font-size:50px">Drink With Us</span></h5>
     <div class="w3-content" style="max-width:1080px;background-color:#f2fde0">
-    <div class="w3-content" style="max-width:700px">
+      <p style="font-size: 40px; color: #2c902f; font-family:Barriecito, system-ui; margin-left:30px"> White Wines</p>
+            <!-- first thumbnail image created below -->
+            <div class="w3-container w3-padding-64" id="DrinkWithUs">
+              <div class="padding-large">
+                <div class="w3-col s4" style="margin:10px">
+                  <img
+                src="./Albarino.png"
+                style="width: 100%; cursor: zoom-in; max-width:100px; max-height:200px; align-content: center;"
+                onclick="document.getElementById('modal01').style.display='block'"
+                class="w3-hover-shadow"
+               />
+               </div>
+
+               <div class="w3-col s4" style="margin:10px">
+                  <img
+                src="./Chardonay.png"
+                style="width: 100%; cursor: zoom-in; max-width:100px; max-height:200px; align-content: center;"
+                onclick="document.getElementById('modal02').style.display='block'"
+                class="w3-hover-shadow"
+               />
+               </div>
+
+               <div class="w3-col s4" style="margin:10px">
+                  <img
+                src="./Sauv Blanc.png"
+                style="width: 100%; cursor: zoom-in; max-width:100px; max-height:200px; align-content: center;"
+                onclick="document.getElementById('modal03').style.display='block'"
+                class="w3-hover-shadow"
+               />
+               </div>
+              </div>
+            </div>
+             <div class="w3-row-padding" style="margin: 15px 0px">
+              <div
+                id="modal01"
+                class="w3-modal"
+                onclick="this.style.display='none'">
+                <span
+                class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+                style="cursor: pointer"
+                >&times;</span>
+            <!-- add modal background image -->
+                <div class="w3-modal-content w3-animate-zoom">
+                  <h4 class="w3-center w3-tag">Albarino</h4>
+                  <img src="./Albarino.png" style="width: 100%"/>
+              </div>
+             </div>
+            </div>
+
+          <!-- add the second modal, set id="modal02"-->
+          <!-- each lightbox content (modal) should have a unique modal id -->
+          <div
+            id="modal02"
+            class="w3-modal"
+            onclick="this.style.display='none'"
+          >
+            <!-- add close button-->
+            <span
+              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+              style="cursor: pointer"
+              >&times;</span
+            >
+            <!-- add modal background image -->
+            <div class="w3-modal-content w3-animate-zoom">
+              <h4 class="w3-center">April Bloomfield</h4>
+              <img src="./img/chef-april-bloomfield.png" style="width: 100%" />
+            </div>
+          </div>
+
+          <!-- follow the samples above to continue adding modal for each thumbnail image -->
+          <!-- each lightbox content (modal) should have a unique modal id -->
+          <div
+            id="modal03"
+            class="w3-modal"
+            onclick="this.style.display='none'"
+          >
+            <!-- add code to add modal for each thumbnail image -->
+          </div>
+        </div>
+    
+
+    <div class="w3-content" style="max-width:700px;">
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide" style="font-size:30px">Find the wine you'll love</span></h5>
     <p style="float: center; font-size: 24px;"> Filter through our favorite bottles to see which one is for you!</p>
 <table id="myTable" class="w3-table-all" style="font-family:Barriecito, system-ui; border:none; max-width: auto;">
@@ -510,8 +602,8 @@ body, html {
   </tbody>
 </table>
 </div>
-</div>
-</div>
+
+
 
 <!-- Gallery Container -->
 <div class="w3-container" id="gallery">
