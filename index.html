@@ -473,102 +473,126 @@ body, html {
 <!-- Drink with us Container -->
 <div class="w3-container">
     <div id="drink"></div>
-    <h5 class="w3-center w3-padding-48" id="drink"><span class="w3-tag w3-wide" style="font-size:50px">Drink With Us</span></h5>
-    <div class="w3-content s4">
-      <p style="font-size: 40px; color: #2c902f; font-family:Barriecito, system-ui; margin-left:20px"> White Wines</p>
-            <div class="w3-container s4 w3-padding-48">
-                <div class="w3-row">
-                  <div class="w3-col s4" style="margin:10px">
-                    <img
-                      src="./Albarino.png"
-                      style="width:33.3%; cursor: zoom-in; max-width:200px; max-height:300px; align-content: center;"
-                      onclick="document.getElementById('modal01').style.display='block'"
-                      class="w3-hover-shadow"
-                    />
-                    <p style="color: #2c902f; font-family:Barriecito; font-size: 25px;">Albariño</p>
-                    <p style="color: #2c902f; font-family:Barriecito">2023 La Marea Krisy Vineyard, Monterey</p>
-                    <p style="color: #2c902f; font-family:Barriecito">$15 glass / $48 bottle </p>
-                </div>
-                
-                <div class="w3-col s4" style="margin:10px">
-                    <img
-                      src="./Chardonay.png"
-                      style="width: 33.3%; cursor: zoom-in; max-width:200px; max-height:300px; align-content: center;"
-                      onclick="document.getElementById('modal02').style.display='block'"
-                      class="w3-hover-shadow"
-                    />
-                      <p style="color: #2c902f; font-family:Barriecito; font-size: 25px;">Chardonnay</p>
-                      <p style="color: #2c902f; font-family:Barriecito">2022 La Follette, ‘Los Primeros’, Monterey & Sonoma County</p>
-                      <p style="color: #2c902f; font-family:Barriecito">$15 glass / $48 bottle</p>
-                </div>
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide" style="font-size:50px">Drink With Us</span></h5>
+    
+    <!--White Wines-->
+    <div class="w3-content">
+      <p style="font-size: 40px; color: #2c902f; font-family:Barriecito, system-ui; margin-left:20px">White Wines</p>
 
-                <div class="w3-col s4" style="margin:10px">
-                  <img
-                    src="./Sauv Blanc.png"
-                    style="width: 33.3%; cursor: zoom-in; max-width:200px; max-height:300px; align-content: center;"
-                    onclick="document.getElementById('modal03').style.display='block'"
-                    class="w3-hover-shadow"
-                   />
-                   <p style="color: #2c902f; font-family:Barriecito;font-size: 25px;">Sauvignon Blanc</p>
-                   <p style="color: #2c902f; font-family:Barriecito">2022 Dry Creek Valley, California</p>
-                   <p style="color: #2c902f; font-family:Barriecito">$14 glass / $55 bottle </p>
-                 </div>
-                </div>
-              </div>
-            
+      <div class="w3-container w3-padding-48">
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
 
-             <div class="w3-row-padding" style="margin: 15px 0px">
-              <div
-                id="modal01"
-                class="w3-modal"
-                onclick="this.style.display='none'">
-                <span
-                class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
-                style="cursor: pointer"
-                >&times;</span>
-            <!-- add modal background image -->
-                <div class="w3-modal-content w3-animate-zoom">
-                  <h4 class="w3-center w3-tag">Albarino</h4>
-                  <img src="./Albarino.png" style="width: 100%"/>
-              </div>
-             </div>
-            </div>
+          <!-- Albariño -->
+          <div style="flex: 1 1 250px; max-width: 300px; text-align: center;">
+            <img src="./Albarino.png" style="width: 100%; max-width:200px; max-height:300px; cursor: zoom-in;"
+              onclick="document.getElementById('modal01').style.display='block'" class="w3-hover-shadow" />
+            <p style="color: #2c902f; font-family:Barriecito; font-size: 25px;">Albariño</p>
+            <p style="color: #2c902f; font-family:Barriecito">2023 La Marea Krisy Vineyard, Monterey</p>
+            <p style="color: #2c902f; font-family:Barriecito">$15 glass / $48 bottle</p>
+          </div>
 
-            <div class="w3-row-padding" style="margin: 15px 0px">
-              <div
-                id="modal02"
-                class="w3-modal"
-                onclick="this.style.display='none'">
-                <span
-                class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
-                style="cursor: pointer"
-                >&times;</span>
-            <!-- add modal background image -->
-                <div class="w3-modal-content w3-animate-zoom">
-                  <h4 class="w3-center w3-tag">Chardonnay</h4>
-                  <img src="./Chardonay.png" style="width: 100%"/>
-              </div>
-             </div>
-            </div>
+          <!-- Chardonnay -->
+          <div style="flex: 1 1 250px; max-width: 300px; text-align: center;">
+            <img src="./Chardonay.png" style="width: 100%; max-width:200px; max-height:300px; cursor: zoom-in;"
+              onclick="document.getElementById('modal02').style.display='block'" class="w3-hover-shadow" />
+            <p style="color: #2c902f; font-family:Barriecito; font-size: 25px;">Chardonnay</p>
+            <p style="color: #2c902f; font-family:Barriecito">2022 La Follette, 'Los Primeros', Monterey & Sonoma County</p>
+            <p style="color: #2c902f; font-family:Barriecito">$15 glass / $48 bottle</p>
+          </div>
 
-            <div class="w3-row-padding" style="margin: 15px 0px">
-              <div
-                id="modal03"
-                class="w3-modal"
-                onclick="this.style.display='none'">
-                <span
-                class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
-                style="cursor: pointer"
-                >&times;</span>
-            <!-- add modal background image -->
-                <div class="w3-modal-content w3-animate-zoom">
-                  <h4 class="w3-center w3-tag">Sauvignon Blanc</h4>
-                  <img src="./Sauv Blanc.png" style="width: 100%"/>
-              </div>
-             </div>
-            </div>
+          <!-- Sauvignon Blanc -->
+          <div style="flex: 1 1 250px; max-width: 300px; text-align: center;">
+            <img src="./Sauv Blanc.png" style="width: 100%; max-width:200px; max-height:300px; cursor: zoom-in;"
+              onclick="document.getElementById('modal03').style.display='block'" class="w3-hover-shadow" />
+            <p style="color: #2c902f; font-family:Barriecito; font-size: 25px;">Sauvignon Blanc</p>
+            <p style="color: #2c902f; font-family:Barriecito">2022 Dry Creek Valley, California</p>
+            <p style="color: #2c902f; font-family:Barriecito">$14 glass / $55 bottle</p>
+          </div>
 
-            
+        </div>
+      </div>
+    </div>
+<!--Orange / Rose  Wines-->
+    <div class="w3-content">
+      <p style="font-size: 40px; color: #2c902f; font-family:Barriecito, system-ui; margin-left:20px">Orange & Rosé Wines</p>
+
+      <div class="w3-container w3-padding-48">
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+
+          <!-- Rose -->
+          <div style="flex: 1 1 250px; max-width: 300px; text-align: center;">
+            <img src="./Rose of Gren.png" style="width: 100%; max-width:200px; max-height:300px; cursor: zoom-in;"
+              onclick="document.getElementById('modal04').style.display='block'" class="w3-hover-shadow" />
+            <p style="color: #2c902f; font-family:Barriecito; font-size: 25px;">Rose of Grenache</p>
+            <p style="color: #2c902f; font-family:Barriecito">2022 Mathis, Sonoma Valley</p>
+            <p style="color: #2c902f; font-family:Barriecito">$14 glass / $45 bottle</p>
+          </div>
+
+          <!-- Orange -->
+          <div style="flex: 1 1 250px; max-width: 300px; text-align: center;">
+            <img src="./Marmalade.png" style="width: 100%; max-width:200px; max-height:300px; cursor: zoom-in;"
+              onclick="document.getElementById('modal05').style.display='block'" class="w3-hover-shadow" />
+            <p style="color: #2c902f; font-family:Barriecito; font-size: 25px;">Orange Blend</p>
+            <p style="color: #2c902f; font-family:Barriecito">2023 Breaking Bad ‘Marmalade’, Dry Creek Valley</p>
+            <p style="color: #2c902f; font-family:Barriecito">$14 glass / $55 bottle</p>
+          </div>
+
+          <!-- Orange -->
+          <div style="flex: 1 1 250px; max-width: 300px; text-align: center;">
+            <img src="./OrangeWine.png" style="width: 100%; max-width:200px; max-height:300px; cursor: zoom-in;"
+              onclick="document.getElementById('modal06').style.display='block'" class="w3-hover-shadow" />
+            <p style="color: #2c902f; font-family:Barriecito; font-size: 25px;">Orange Blend</p>
+            <p style="color: #2c902f; font-family:Barriecito">2023 Giornata 'orangotango’, Paso Robles</p>
+            <p style="color: #2c902f; font-family:Barriecito">$15 glass / $48 bottle</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--Red Wines-->
+    <div class="w3-content">
+      <p style="font-size: 40px; color: #2c902f; font-family:Barriecito, system-ui; margin-left:20px">Red Wines</p>
+
+      <div class="w3-container w3-padding-48">
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+
+          <!-- Zin -->
+          <div style="flex: 1 1 250px; max-width: 300px; text-align: center;">
+            <img src="./Zin.png" style="width: 100%; max-width:200px; max-height:300px; cursor: zoom-in;"
+              onclick="document.getElementById('modal07').style.display='block'" class="w3-hover-shadow" />
+            <p style="color: #2c902f; font-family:Barriecito; font-size: 25px;">Zinfindel</p>
+            <p style="color: #2c902f; font-family:Barriecito">2022 Portalupi ‘Shake Ridge Ranch,’ Amador County</p>
+            <p style="color: #2c902f; font-family:Barriecito">$15 glass / $45 bottle</p>
+          </div>
+
+          <!-- Pinot -->
+          <div style="flex: 1 1 250px; max-width: 300px; text-align: center;">
+            <img src="./PinotNoir.png" style="width: 100%; max-width:200px; max-height:300px; cursor: zoom-in;"
+              onclick="document.getElementById('modal08').style.display='block'" class="w3-hover-shadow" />
+            <p style="color: #2c902f; font-family:Barriecito; font-size: 25px;">Pinot Noir</p>
+            <p style="color: #2c902f; font-family:Barriecito">2021 Gallegos, Monterey County</p>
+            <p style="color: #2c902f; font-family:Barriecito">$17 glass / $52 bottle</p>
+          </div>
+
+          <!-- Cab -->
+          <div style="flex: 1 1 250px; max-width: 300px; text-align: center;">
+            <img src="./CabFranc.png" style="width: 100%; max-width:200px; max-height:300px; cursor: zoom-in;"
+              onclick="document.getElementById('modal09').style.display='block'" class="w3-hover-shadow" />
+            <p style="color: #2c902f; font-family:Barriecito; font-size: 25px;">Cabernet Franc</p>
+            <p style="color: #2c902f; font-family:Barriecito">2021 Union Sacre, Paso Robles</p>
+            <p style="color: #2c902f; font-family:Barriecito">$14 glass / $46 bottle</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+</div>
+          
 
           
     
@@ -779,7 +803,7 @@ body, html {
       <div class="w3-col s4" style="text-align:center;">
         <p>Eat & Drink with Us</p>
         <p>1158 Prospect St San Diego, CA 92037</p>
-        <p>(858)551-8250</p>
+        <p>(858)-551-8250</p>
       </div>
       <div class="w3-col s4" style="text-align:center; float:right">
         <p>Terms & Conditions</p>
@@ -895,6 +919,110 @@ document.getElementById("myLink").click();
       
 
 </script>
+
+<!-----Wine Modals ------>
+            <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+              <div class="w3-modal-content w3-animate-zoom" style="position: relative; max-width: 400px;">
+                <span
+                  onclick="event.stopPropagation(); document.getElementById('modal01').style.display='none'"
+                  style="position: absolute; top: 10px; right: 20px; font-size: 30px; font-weight: bold; color: #333; cursor: pointer; z-index: 10; background: rgba(255,255,255,0.8); width: 36px; height: 36px; line-height: 36px; text-align: center; border-radius: 50%;"
+                >&times;</span>
+                <h4 class="w3-center w3-tag">Albarino</h4>
+                <img src="./Albarino.png" style="width: 100%"/>
+              </div>
+            </div>
+
+            <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+              <div class="w3-modal-content w3-animate-zoom" style="position: relative; max-width: 400px;">
+                <span
+                  onclick="event.stopPropagation(); document.getElementById('modal02').style.display='none'"
+                  style="position: absolute; top: 10px; right: 20px; font-size: 30px; font-weight: bold; color: #333; cursor: pointer; z-index: 10; background: rgba(255,255,255,0.8); width: 36px; height: 36px; line-height: 36px; text-align: center; border-radius: 50%;"
+                >&times;</span>
+                <h4 class="w3-center w3-tag">Chardonnay</h4>
+                <img src="./Chardonay.png" style="width: 100%"/>
+              </div>
+            </div>
+
+            <div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+              <div class="w3-modal-content w3-animate-zoom" style="position: relative; max-width: 400px;">
+                <span
+                  onclick="event.stopPropagation(); document.getElementById('modal03').style.display='none'"
+                  style="position: absolute; top: 10px; right: 20px; font-size: 30px; font-weight: bold; color: #333; cursor: pointer; z-index: 10; background: rgba(255,255,255,0.8); width: 36px; height: 36px; line-height: 36px; text-align: center; border-radius: 50%;"
+                >&times;</span>
+                <h4 class="w3-center w3-tag">Sauvignon Blanc</h4>
+                <img src="./Sauv Blanc.png" style="width: 100%"/>
+              </div>
+            </div>
+
+
+
+            <div id="modal04" class="w3-modal" onclick="this.style.display='none'">
+              <div class="w3-modal-content w3-animate-zoom" style="position: relative; max-width: 400px;">
+                <span
+                  onclick="event.stopPropagation(); document.getElementById('modal04').style.display='none'"
+                  style="position: absolute; top: 10px; right: 20px; font-size: 30px; font-weight: bold; color: #333; cursor: pointer; z-index: 10; background: rgba(255,255,255,0.8); width: 36px; height: 36px; line-height: 36px; text-align: center; border-radius: 50%;"
+                >&times;</span>
+                <h4 class="w3-center w3-tag">Rosé of Grenache</h4>
+                <img src="./Rose of Gren.png" style="width: 100%"/>
+              </div>
+            </div>
+
+            <div id="modal05" class="w3-modal" onclick="this.style.display='none'">
+              <div class="w3-modal-content w3-animate-zoom" style="position: relative; max-width: 400px;">
+                <span
+                  onclick="event.stopPropagation(); document.getElementById('modal05').style.display='none'"
+                  style="position: absolute; top: 10px; right: 20px; font-size: 30px; font-weight: bold; color: #333; cursor: pointer; z-index: 10; background: rgba(255,255,255,0.8); width: 36px; height: 36px; line-height: 36px; text-align: center; border-radius: 50%;"
+                >&times;</span>
+                <h4 class="w3-center w3-tag">Orange Blend 'Marmelade'</h4>
+                <img src="./Marmalade.png" style="width: 100%"/>
+              </div>
+            </div>
+
+            <div id="modal06" class="w3-modal" onclick="this.style.display='none'">
+              <div class="w3-modal-content w3-animate-zoom" style="position: relative; max-width: 400px;">
+                <span
+                  onclick="event.stopPropagation(); document.getElementById('modal06').style.display='none'"
+                  style="position: absolute; top: 10px; right: 20px; font-size: 30px; font-weight: bold; color: #333; cursor: pointer; z-index: 10; background: rgba(255,255,255,0.8); width: 36px; height: 36px; line-height: 36px; text-align: center; border-radius: 50%;"
+                >&times;</span>
+                <h4 class="w3-center w3-tag">Orange Blend 'Orangotango'</h4>
+                <img src="./OrangeWine.png" style="width: 100%"/>
+              </div>
+            </div>
+
+
+
+            <div id="modal07" class="w3-modal" onclick="this.style.display='none'">
+              <div class="w3-modal-content w3-animate-zoom" style="position: relative; max-width: 400px;">
+                <span
+                  onclick="event.stopPropagation(); document.getElementById('modal07').style.display='none'"
+                  style="position: absolute; top: 10px; right: 20px; font-size: 30px; font-weight: bold; color: #333; cursor: pointer; z-index: 10; background: rgba(255,255,255,0.8); width: 36px; height: 36px; line-height: 36px; text-align: center; border-radius: 50%;"
+                >&times;</span>
+                <h4 class="w3-center w3-tag">Zinfindel</h4>
+                <img src="./Zin.png" style="width: 100%"/>
+              </div>
+            </div>
+
+            <div id="modal08" class="w3-modal" onclick="this.style.display='none'">
+              <div class="w3-modal-content w3-animate-zoom" style="position: relative; max-width: 400px;">
+                <span
+                  onclick="event.stopPropagation(); document.getElementById('modal08').style.display='none'"
+                  style="position: absolute; top: 10px; right: 20px; font-size: 30px; font-weight: bold; color: #333; cursor: pointer; z-index: 10; background: rgba(255,255,255,0.8); width: 36px; height: 36px; line-height: 36px; text-align: center; border-radius: 50%;"
+                >&times;</span>
+                <h4 class="w3-center w3-tag">Pinot Noir</h4>
+                <img src="./PinotNoir.png" style="width: 100%"/>
+              </div>
+            </div>
+
+            <div id="modal09" class="w3-modal" onclick="this.style.display='none'">
+              <div class="w3-modal-content w3-animate-zoom" style="position: relative; max-width: 400px;">
+                <span
+                  onclick="event.stopPropagation(); document.getElementById('modal09').style.display='none'"
+                  style="position: absolute; top: 10px; right: 20px; font-size: 30px; font-weight: bold; color: #333; cursor: pointer; z-index: 10; background: rgba(255,255,255,0.8); width: 36px; height: 36px; line-height: 36px; text-align: center; border-radius: 50%;"
+                >&times;</span>
+                <h4 class="w3-center w3-tag">Cabernet Franc</h4>
+                <img src="./CabFranc.png" style="width: 100%"/>
+              </div>
+            </div>
 
 </body>
 </html>
